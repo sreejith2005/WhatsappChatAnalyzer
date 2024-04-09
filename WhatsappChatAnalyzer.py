@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.title("Whatsapp Chat Analyzer")
-st.sidebar.title("Upload a File")
+# st.sidebar.title("Upload a File")
 
-uploaded_file = st.sidebar.file_uploader("")
+uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
